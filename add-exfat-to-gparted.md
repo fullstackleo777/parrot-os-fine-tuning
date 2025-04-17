@@ -4,10 +4,10 @@ To add **exFAT** as a format option in **GParted** on Parrot OS, you'll need to 
 
 ## Steps to Add
 
-### 1. **Open Terminal**
+### 1. Open Terminal
    First, open your terminal. You can do this by searching for "Terminal" in your menu or pressing `Ctrl + Alt + T` on your keyboard.
 
-### 2. **Install the exFAT Utilities**
+### 2. Install the exFAT Utilities
    Run the following command to install the required packages for handling exFAT file systems:
 
    ```bash
@@ -20,7 +20,7 @@ To add **exFAT** as a format option in **GParted** on Parrot OS, you'll need to 
 
    Enter your password if prompted, and press `Enter`. Let the packages install.
 
-### 3. **Open GParted**
+### 3. Open GParted
    Once the installation is complete, open **GParted** by searching for it in the applications menu or by running:
 
    ```bash
@@ -29,13 +29,13 @@ To add **exFAT** as a format option in **GParted** on Parrot OS, you'll need to 
 
    You may be prompted to enter your password to open GParted with root permissions.
 
-### 4. **Format Partition to exFAT**
+### 4. Format Partition to exFAT
    Now, you should be able to:
    - Select the partition you want to format.
    - Right-click the partition and choose "Format to".
    - In the list, you should now see **exFAT** as an option.
 
-### 5. **Apply Changes**
+### 5. Apply Changes
    After selecting **exFAT**, click the green checkmark (✔️) in the toolbar to apply the changes.
 
 That’s it! Now you should be able to use exFAT as a format option in GParted.
@@ -46,7 +46,7 @@ That’s it! Now you should be able to use exFAT as a format option in GParted.
 
 If the **exFAT** option in GParted is still grayed out even after installing `exfat-fuse` and `exfat-utils`, it could be due to GParted requiring additional dependencies or restarting for it to recognize the new tools. Let's try a few additional steps to resolve this:
 
-### 1. **Ensure the Packages Are Installed Correctly**
+### 1. Ensure the Packages Are Installed Correctly
 
 Double-check that the exFAT packages were installed properly. Run this command to verify:
 
@@ -60,7 +60,7 @@ If you see both `exfat-fuse` and `exfat-utils` listed, they are installed correc
 sudo apt install exfat-fuse exfat-utils
 ```
 
-### 2. **Restart GParted**
+### 2. Restart GParted
 
 After installing the tools, **restart GParted** to refresh its file system options. If GParted was running while you installed the packages, it might not have loaded the exFAT support yet.
 
@@ -71,7 +71,7 @@ After installing the tools, **restart GParted** to refresh its file system optio
 sudo gparted
 ```
 
-### 3. **Check for Any Additional Dependencies**
+### 3. Check for Any Additional Dependencies
 
 In some cases, additional libraries might be required. Install **dosfstools** (though it's mostly for FAT32 and VFAT, it could help):
 
@@ -79,7 +79,7 @@ In some cases, additional libraries might be required. Install **dosfstools** (t
 sudo apt install dosfstools
 ```
 
-### 4. **Unmount the Partition Before Formatting**
+### 4. Unmount the Partition Before Formatting
 
 Make sure the partition you are trying to format is **unmounted**. GParted will gray out certain options if the partition is currently mounted. To unmount:
 
@@ -88,7 +88,7 @@ Make sure the partition you are trying to format is **unmounted**. GParted will 
   
 Then try formatting to exFAT again.
 
-### 5. **Try Formatting Using the Command Line**
+### 5. Try Formatting Using the Command Line
 
 If GParted still doesn’t offer the option, you can format the partition to exFAT using the command line:
 
@@ -110,7 +110,7 @@ If GParted still doesn’t offer the option, you can format the partition to exF
 
 After that, GParted should recognize the partition as exFAT.
 
-### 6. **Reboot Your System**
+### 6. Reboot Your System
 
 If none of the above steps work, **reboot your system** to ensure all the necessary services and tools are properly loaded. After rebooting, try GParted again.
 
@@ -120,7 +120,7 @@ Running `dpkg -l | grep exfat` causes this error `E: Sub-process /usr/bin/dpkg r
 
 It looks like there might be an issue with the **dpkg** package manager. Let’s try a few steps to fix this issue:
 
-### 1. **Fix Broken Packages**
+### 1. Fix Broken Packages
 First, let's ensure that no packages are broken. Run the following commands to fix any issues:
 
 ```bash
@@ -133,14 +133,14 @@ This command will attempt to repair broken packages. After that, update the pack
 sudo apt update
 ```
 
-### 2. **Reinstall exFAT Packages**
+### 2. Reinstall exFAT Packages
 After repairing any issues with `dpkg`, try reinstalling the exFAT packages:
 
 ```bash
 sudo apt install --reinstall exfat-fuse exfat-utils
 ```
 
-### 3. **Check dpkg Status**
+### 3. Check dpkg Status
 Once the packages are reinstalled, check if `dpkg` is working fine:
 
 ```bash
