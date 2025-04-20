@@ -1,6 +1,6 @@
 # First Steps After A Fresh Parrot OS Install
 
-## To fully upgrade your fresh install of Parrot OS, follow these simple steps:
+## To Fully Upgrade Your Fresh Install of Parrot OS, Follow These Simple Steps:
 
 ### Step 1: Open a Terminal
 - Press `Ctrl + Alt + T` to open the Terminal, or find it in the Applications menu.
@@ -39,7 +39,7 @@ That’s it! Your system should now be fully upgraded.
 
 Great job on upgrading your system! Now that your Parrot OS is up to date, here are a few important configurations you might want to consider next:
 
-### 1. **Set Up Firewall (UFW - Uncomplicated Firewall)**
+### 1. Set Up Firewall (UFW - Uncomplicated Firewall)
 Security is one of the main focuses of Parrot OS, and setting up the firewall is a good next step.
 
 - **Install UFW (if it's not installed):**
@@ -67,13 +67,13 @@ Security is one of the main focuses of Parrot OS, and setting up the firewall is
   sudo ufw status
   ```
 
-### 2. **Configure the Appearance**
+### 2. Configure the Appearance
 You can tweak the desktop environment to your liking:
 
 - **Change the theme, icons, and background**: Go to `Settings` → `Appearance` to explore available options.
 - **Dark Mode**: If you prefer dark themes, you can enable it under `Appearance` as well.
 
-### 3. **Set Up Privacy Tools**
+### 3. Set Up Privacy Tools
 Parrot OS comes with privacy tools by default, but it’s good to configure them properly:
 - **Anonsurf**: Anonsurf routes all traffic through Tor for privacy.
 
@@ -95,7 +95,7 @@ Parrot OS comes with privacy tools by default, but it’s good to configure them
   sudo apt install torbrowser-launcher
   ```
 
-### 4. **Configure Software Repositories**
+### 4. Configure Software Repositories
 By default, Parrot OS should have the correct repositories, but it’s good to double-check in case you want to enable more sources.
 
 - **To check or modify repositories:**
@@ -108,7 +108,7 @@ By default, Parrot OS should have the correct repositories, but it’s good to d
 
   Make sure the entries look correct (the default Parrot ones should already be there). If you want to add custom ones, this is where you can do it.
 
-### 5. **Install Additional Tools**
+### 5. Install Additional Tools
 Depending on your usage, you may want to install specific tools:
 - **Development tools**: Install programming languages like Python, Java, or other development environments.
 
@@ -130,14 +130,14 @@ Depending on your usage, you may want to install specific tools:
   sudo apt install virtualbox
   ```
 
-### 6. **Update Your System Regularly**
+### 6. Update Your System Regularly
 Security updates are important, so you might want to schedule regular updates. You can automate this, but for now, you can run:
 
 ```bash
 sudo apt update && sudo apt full-upgrade
 ```
 
-### 7. **Backup Configuration**
+### 7. Backup Configuration
 Setting up a backup system is crucial in case something goes wrong:
 
 - **Install Timeshift** (a system backup tool):
@@ -149,4 +149,3 @@ Setting up a backup system is crucial in case something goes wrong:
 - Configure it to take regular snapshots of your system.
 
 ---
-
