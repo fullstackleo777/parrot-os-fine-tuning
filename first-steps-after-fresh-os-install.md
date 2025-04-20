@@ -42,7 +42,7 @@ Great job on upgrading your system! Now that your Parrot OS is up to date, here 
 ### 1. Set Up Firewall (UFW - Uncomplicated Firewall)
 Security is one of the main focuses of Parrot OS, and setting up the firewall is a good next step.
 
-- **Install UFW (if it's not installed):**
+- **Install UFW (if it's not installed)**
 
   ```bash
   sudo apt install ufw
@@ -54,14 +54,14 @@ Security is one of the main focuses of Parrot OS, and setting up the firewall is
   sudo ufw enable
   ```
 
-- **Allow basic services (like SSH, if needed):**
+- **Allow basic services (like SSH, if needed)**
   For example, if you need SSH access:
 
   ```bash
   sudo ufw allow ssh
   ```
 
-- **Check the firewall status:**
+- **Check the firewall status**
 
   ```bash
   sudo ufw status
@@ -70,12 +70,15 @@ Security is one of the main focuses of Parrot OS, and setting up the firewall is
 ### 2. Configure the Appearance
 You can tweak the desktop environment to your liking:
 
-- **Change the theme, icons, and background**: Go to `Settings` → `Appearance` to explore available options.
-- **Dark Mode**: If you prefer dark themes, you can enable it under `Appearance` as well.
+- **Change the theme, icons, and background**
+Go to `Settings` → `Appearance` to explore available options.
+- **Dark Mode**
+If you prefer dark themes, you can enable it under `Appearance` as well.
 
 ### 3. Set Up Privacy Tools
-Parrot OS comes with privacy tools by default, but it’s good to configure them properly:
-- **Anonsurf**: Anonsurf routes all traffic through Tor for privacy.
+Parrot OS comes with privacy tools by default, but it’s good to configure them properly.
+- **Anonsurf**
+Anonsurf routes all traffic through Tor for privacy.
 
   To enable Anonsurf:
 
@@ -89,7 +92,7 @@ Parrot OS comes with privacy tools by default, but it’s good to configure them
   sudo anonsurf stop
   ```
 
-- **Tor Browser**: If you need the Tor Browser for anonymous browsing, you can launch it from the Applications menu or install it if it's missing:
+- **Tor Browser**: If you need the Tor Browser for anonymous browsing, you can launch it from the Applications menu or install it if it's missing.
 
   ```bash
   sudo apt install torbrowser-launcher
@@ -98,9 +101,9 @@ Parrot OS comes with privacy tools by default, but it’s good to configure them
 ### 4. Configure Software Repositories
 By default, Parrot OS should have the correct repositories, but it’s good to double-check in case you want to enable more sources.
 
-- **To check or modify repositories:**
+- **To check or modify repositories**
 
-  Open the file with a text editor:
+  Open the file with a text editor.
 
   ```bash
   sudo nano /etc/apt/sources.list.d/parrot.list
@@ -124,7 +127,8 @@ Depending on your usage, you may want to install specific tools:
   sudo apt install default-jdk
   ```
 
-- **VirtualBox or VMware**: If you want to run virtual machines, you might want to install VirtualBox.
+- **VirtualBox or VMware**
+If you want to run virtual machines, you might want to install VirtualBox.
 
   ```bash
   sudo apt install virtualbox

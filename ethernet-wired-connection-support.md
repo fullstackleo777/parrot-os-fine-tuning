@@ -36,7 +36,7 @@ sudo systemctl restart NetworkManager
 Wait a few moments, and then see if the wired connection is working.
 
 ### Step 4: Check if the Network Connection is Set to Auto-Connect
-You can verify whether the connection is set to auto-connect:
+You can verify whether the connection is set to auto-connect.
 
 #### 1. Go to **System Settings** or **Settings**.
 #### 2. Navigate to **Network** or **Network Connections**.
@@ -63,10 +63,10 @@ After running `lspci | grep Ethernet` and got the message `0a:00.0 Ethernet cont
 
 It looks like your system has a Realtek RTL8111/8168/8411 Ethernet controller. This particular controller sometimes needs an additional or updated driver for proper functionality on Linux systems like Parrot OS.
 
-Here’s how we can address this issue:
+Here’s how we can address this issue.
 
 ### Step 1: Check if the Driver is Installed
-First, let’s check if the correct driver for the Realtek Ethernet card is installed and loaded. In your terminal, run this command:
+First, let’s check if the correct driver for the Realtek Ethernet card is installed and loaded. In your terminal, run this command.
 
 ```
 lsmod | grep r8169
@@ -80,37 +80,37 @@ This command checks if the `r8169` driver, which is typically used for this Ethe
 ### Step 2: Install or Update the Realtek Driver
 If the `r8169` driver is loaded but you’re still facing issues, the default `r8169` driver might not work well with your specific Realtek chip version. We can install the **r8168** driver, which is more compatible with this chip.
 
-Here are the steps to install the `r8168` driver:
+Here are the steps to install the `r8168` driver.
 
-#### 1. **Update your package list:**
+#### 1. **Update your package list**
 
    ```
    sudo apt update
    ```
 
-#### 2. **Install the `r8168-dkms` package**, which provides a better driver for Realtek network cards:
+#### 2. **Install the `r8168-dkms` package**, which provides a better driver for Realtek network cards
 
    ```
    sudo apt install r8168-dkms
    ```
 
-#### 3. **Unload the old driver and load the new one:**
+#### 3. **Unload the old driver and load the new one**
 
-   First, remove the current `r8169` driver:
+   First, remove the current `r8169` driver.
 
    ```
    sudo modprobe -r r8169
    ```
 
-   Then, load the `r8168` driver:
+   Then, load the `r8168` driver.
 
    ```
    sudo modprobe r8168
    ```
 
-#### 4. **Reboot your system:**
+#### 4. **Reboot your system**
    
-   After the above steps, reboot your machine:
+   After the above steps, reboot your machine.
 
    ```
    sudo reboot
@@ -119,13 +119,13 @@ Here are the steps to install the `r8168` driver:
 Once your system has rebooted, check if your LAN connection is working properly.
 
 ### Step 3: Verify the Network Connection
-After rebooting, you can verify the connection status by running:
+After rebooting, you can verify the connection status by running.
 
 ```
 ip a
 ```
 
-Check if your Ethernet interface is now up and has an IP address assigned to it. You should see something like this:
+Check if your Ethernet interface is now up and has an IP address assigned to it. You should see something like this.
 
 - The `eth0`, `enp3s0`, or similar interface should say `UP`.
 - It should have an IP address listed under it (something like `inet 192.168.x.x`).

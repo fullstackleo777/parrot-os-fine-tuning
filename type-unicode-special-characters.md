@@ -1,5 +1,7 @@
 # Common Typography Characters and Their Unicode Code Points (Including Mexican Typography):
 
+Pres CTL + Shift + u, then type the character code poing, and press space or enter to insert the character.
+
 | Character | Description               | Unicode      | Code Point   |
 |-----------|---------------------------|--------------|--------------|
 | `‘`       | Left Single Quote         | U+2018       | `2018`       |
@@ -32,3 +34,5 @@
 | `¿`       | Inverted Question Mark    | U+00BF       | `00BF`       |
 | `¢`       | Cent Sign                 | U+00A2       | `00A2`       |
 | `₱`       | Mexican Peso Sign         | U+20B1       | `20B1`       |
+
+---
