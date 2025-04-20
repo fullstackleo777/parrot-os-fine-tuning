@@ -2,7 +2,9 @@
 
 Adding emoji support to **Parrot OS** involves enabling the correct fonts and ensuring your system has the necessary packages installed. Follow these steps to add emoji characters:
 
-### 1. **Install Emoji Fonts**
+## Steps to Add
+
+### 1. Install Emoji Fonts
 Ensure you have fonts that include emojis. A popular choice is the `noto-fonts-emoji` package.
 
 - Open your terminal.
@@ -12,7 +14,7 @@ Ensure you have fonts that include emojis. A popular choice is the `noto-fonts-e
   sudo apt install fonts-noto-color-emoji
   ```
 
-### 2. **Set Emoji Font as Default**
+### 2. Set Emoji Font as Default
 To ensure emojis display properly in applications:
 
 - Edit or create a font configuration file in your home directory:
@@ -47,26 +49,26 @@ To ensure emojis display properly in applications:
   ```
 - Save the file and exit.
 
-### 3. **Rebuild Font Cache**
+### 3. Rebuild Font Cache
 Rebuild the font cache to apply changes:
 ```bash
 fc-cache -fv
 ```
 
-### 4. **Enable Emoji Support in Terminal (Optional)**
+### 4. Enable Emoji Support in Terminal (Optional)
 If you want emojis to render in your terminal (e.g., in bash, zsh, or other terminal apps):
 
 - Make sure your terminal supports Unicode. Most modern terminals do.
 - Use a font in your terminal emulator that includes emoji support, such as `Noto Color Emoji` or `Hack Nerd Font`.
 
-### 5. **Test Emoji Rendering**
+### 5. Test Emoji Rendering
 You can test emoji support by running the following command in your terminal:
 ```bash
 echo -e "\xF0\x9F\x98\x81"
 ```
 This should render a smiling face emoji (😁).
 
-### 6. **Install Additional Emoji Tools (Optional)**
+### 6. Install Additional Emoji Tools (Optional)
 For extended emoji usage, consider installing emoji-picker tools:
 ```bash
 sudo apt install rofi-emoji
@@ -74,3 +76,5 @@ sudo apt install rofi-emoji
 You can then invoke the emoji picker using `rofi-emoji`.
 
 By following these steps, you should be able to fully enjoy emoji support across your system.
+
+---

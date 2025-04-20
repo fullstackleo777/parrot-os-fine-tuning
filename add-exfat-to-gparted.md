@@ -42,7 +42,7 @@ That’s it! Now you should be able to use exFAT as a format option in GParted.
 
 ## Troubleshooting
 
-### The exfat option in gparted is grayed out
+### The exFAT Option in GParted is Grayed Out
 
 If the **exFAT** option in GParted is still grayed out even after installing `exfat-fuse` and `exfat-utils`, it could be due to GParted requiring additional dependencies or restarting for it to recognize the new tools. Let's try a few additional steps to resolve this:
 
@@ -92,7 +92,7 @@ Then try formatting to exFAT again.
 
 If GParted still doesn’t offer the option, you can format the partition to exFAT using the command line:
 
-1. First, identify the partition you want to format by running:
+#### 1. First, Identify the Partition You Want to Format by Running:
 
    ```bash
    lsblk
@@ -100,7 +100,7 @@ If GParted still doesn’t offer the option, you can format the partition to exF
 
    This will show you a list of your drives and partitions. Look for the one you want to format (for example, `/dev/sdb1`).
 
-2. Format the partition to exFAT using this command:
+#### 2. Format the Partition to exFAT Using this Command:
 
    ```bash
    sudo mkfs.exfat /dev/sdX1
@@ -153,23 +153,23 @@ This will verify if the exFAT packages are installed correctly.
 
 Thank you for trying those steps! Since the **exFAT** option is still grayed out in GParted, let's explore a couple of alternative methods and configurations that might resolve this issue.
 
-### 1. **Ensure Partition is Unmounted**
+### 1. Ensure Partition is Unmounted
 Make sure that the partition you're trying to format is unmounted, as GParted won't allow you to format mounted partitions. To do this:
 
 - In GParted, right-click on the partition.
 - If the "Unmount" option is available, select it.
 
-### 2. **Run GParted with Full Root Permissions**
+### 2. Run GParted with Full Root Permissions
 Even though you are using `sudo` to launch GParted, it might help to run it as a full root user to ensure there are no permission issues:
 
-1. Open the terminal.
-2. Run the following command to switch to the root user:
+#### 1. Open the Terminal.
+#### 2. Run the following command to switch to the root user:
 
    ```bash
    sudo su
    ```
 
-3. Then start GParted from the root shell:
+#### 3. Then start GParted from the root shell:
 
    ```bash
    gparted
@@ -177,10 +177,10 @@ Even though you are using `sudo` to launch GParted, it might help to run it as a
 
 Check if the exFAT option is still grayed out.
 
-### 3. **Use `mkfs.exfat` to Format the Partition**
+### 3. Use `mkfs.exfat` to Format the Partition
 If GParted is still not allowing you to format to exFAT, you can manually format the partition via the terminal, which should work as an alternative.
 
-1. **Find the partition** you want to format by running:
+#### 1. **Find the partition** you want to format by running:
 
    ```bash
    lsblk
@@ -188,7 +188,7 @@ If GParted is still not allowing you to format to exFAT, you can manually format
 
    Identify the correct partition (e.g., `/dev/sdb1`).
 
-2. **Format the partition to exFAT** using the following command:
+#### 2. **Format the partition to exFAT** using the following command:
 
    ```bash
    sudo mkfs.exfat /dev/sdX1
@@ -196,7 +196,7 @@ If GParted is still not allowing you to format to exFAT, you can manually format
 
    Replace `/dev/sdX1` with the correct partition name (e.g., `/dev/sdb1`).
 
-3. **Verify the format** by running:
+#### 3. **Verify the format** by running:
 
    ```bash
    sudo blkid /dev/sdX1
@@ -204,23 +204,23 @@ If GParted is still not allowing you to format to exFAT, you can manually format
 
    This will show the partition’s file system, and it should be marked as `exfat`.
 
-### 4. **Check GParted Version**
+### 4. Check GParted Version
 Ensure you are running an up-to-date version of GParted. If your version is outdated, it may not fully support exFAT formatting:
 
-1. Check your version of GParted:
+#### 1. Check your version of GParted:
 
    ```bash
    gparted --version
    ```
 
-2. If it's outdated, update GParted:
+#### 2. If it's outdated, update GParted:
 
    ```bash
    sudo apt update
    sudo apt install gparted
    ```
 
-### 5. **Install Additional Filesystem Utilities (Optional)**
+### 5. Install Additional Filesystem Utilities (Optional)
 In some cases, the **exfatprogs** package may work better than `exfat-utils` for certain Linux distributions. Try installing it:
 
 ```bash
@@ -228,3 +228,5 @@ sudo apt install exfatprogs
 ```
 
 After installing it, repeat the steps to format the partition.
+
+---
