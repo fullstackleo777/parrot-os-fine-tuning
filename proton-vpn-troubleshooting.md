@@ -53,7 +53,7 @@ nameserver 8.8.8.8
 
 Save and exit with `Ctrl + O`, then `Ctrl + X`.
 
-> If you're using `resolvconf` or `systemd-resolved`, let me know so I can guide you differently.
+> If you're using `resolvconf` or `systemd-resolved`, these require a different approach.
 
 ### 3. Flush and Restart NetworkManager (optional but helpful)
 
