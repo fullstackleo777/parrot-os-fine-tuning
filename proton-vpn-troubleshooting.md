@@ -34,8 +34,6 @@ or check your interface's details:
 ip addr show
 ```
 
----
-
 ### 2. Fix DNS Resolution
 
 ProtonVPN often uses **custom DNS servers**, which may stay configured after disconnect. If those DNS servers are no longer reachable, resolution will break.
@@ -56,8 +54,6 @@ nameserver 8.8.8.8
 Save and exit with `Ctrl + O`, then `Ctrl + X`.
 
 > If you're using `resolvconf` or `systemd-resolved`, let me know so I can guide you differently.
-
----
 
 ### 3. Flush and Restart NetworkManager (optional but helpful)
 
