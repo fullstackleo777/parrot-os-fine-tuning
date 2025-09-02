@@ -17,3 +17,6 @@ A list of software that is useful to work with but not included in the Parrot OS
 - OpenShot Video Editor
 - VLC Media Player
 - VSCodium
+- KRename
+
+___
