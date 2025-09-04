@@ -44,5 +44,5 @@ This method is compatible with most Unix-like systems and is widely available.
 
 For a safer alternative with better progress reporting, consider using `dcfldd`. Graphical tools like Balena Etcher or Win32 Disk Imager are also available for users who prefer a visual interface.
 
-TODO: Must find something faster than `dd`!
+TODO: Must find something faster than `dd` (Balena Etcher worked out just fine)
 ___
