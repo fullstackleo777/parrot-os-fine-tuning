@@ -25,4 +25,4 @@ Wacom tablets are well-supported in Linux through the **input-wacom** driver, wh
     dmesg | grep wacom
     ```
 
----
+___

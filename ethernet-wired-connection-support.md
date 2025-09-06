@@ -130,4 +130,4 @@ Check if your Ethernet interface is now up and has an IP address assigned to it.
 - The `eth0`, `enp3s0`, or similar interface should say `UP`.
 - It should have an IP address listed under it (something like `inet 192.168.x.x`).
 
----
+___

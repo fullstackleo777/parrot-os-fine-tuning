@@ -3,6 +3,9 @@
 A list of software that is useful to work with but not included in the Parrot OS installation.
 
 - Brave Browser
+    - Plugins:
+        - Awesome Screenshot
+        - ???
 - Darktable
 - OBS Studio
 - GIMP

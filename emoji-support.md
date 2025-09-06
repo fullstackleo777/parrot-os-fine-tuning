@@ -77,4 +77,4 @@ You can then invoke the emoji picker using `rofi-emoji`.
 
 By following these steps, you should be able to fully enjoy emoji support across your system.
 
----
+___

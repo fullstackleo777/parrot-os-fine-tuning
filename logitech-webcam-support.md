@@ -22,4 +22,4 @@ Most Logitech webcams are plug-and-play on Linux systems, including Parrot OS. T
     ```
   - Make sure the audio settings are picking up the right input mic!
 
----
+___

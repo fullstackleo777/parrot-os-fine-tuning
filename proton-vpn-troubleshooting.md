@@ -100,4 +100,4 @@ chmod +x fix-internet.sh
 
 Run it any time your internet dies post-VPN.
 
----
+___

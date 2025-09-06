@@ -11,4 +11,4 @@ Parrot OS is a Debian-based Linux distribution, so you can install multiple font
 
 By following these steps, you should be able to install multiple font files on Parrot OS efficiently.
 
----
+___

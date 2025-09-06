@@ -19,4 +19,4 @@ The Blue Yeti microphone is also plug-and-play on Linux systems. It uses the **s
   - If audio is not detected, make sure **ALSA** and **PulseAudio** are properly installed and configured.
   - Use `dmesg | grep audio` to look for driver issues.
 
----
+___
