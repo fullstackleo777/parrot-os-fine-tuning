@@ -28,5 +28,6 @@ A list of software that is useful to work with but not included in the Parrot OS
 - VirtualBox
 - QEMU w/ Virt Manager
 - Timeshift
+- SpeedCrunch
 
 ___
