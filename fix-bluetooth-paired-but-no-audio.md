@@ -4,6 +4,12 @@ On a fresh Debian or Parrot OS desktop installation, there is a common error of 
 
 This is also known as the ___paired but silent bluetooth headphones___ issue.
 
+## UPDATE!
+
+I am now replacing pulseaudio with pipewire and all my issues have been resolved due to pulseaudio being outdated and pipewire being the newly improved version that can handle modern media.
+
+See "fix-bluetooth-issues.md".
+
 ## Common Issues
 
 1. The bluetooth audio modules are not installed
