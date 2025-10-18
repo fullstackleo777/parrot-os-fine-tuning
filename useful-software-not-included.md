@@ -2,7 +2,7 @@
 
 A list of software that is useful to work with but not included in the Parrot OS installation.
 
-- xsct
+- Xsct
 - Brave Browser
     - Plugins:
         - Awesome Screenshot
@@ -30,5 +30,7 @@ A list of software that is useful to work with but not included in the Parrot OS
 - QEMU w/ Virt Manager
 - Timeshift
 - SpeedCrunch
+- Pandoc
+    - XeTeX
 
 ___
