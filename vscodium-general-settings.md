@@ -8,7 +8,7 @@ In VSCodium, open the command palette (Ctrl+Shift+P or Cmd+Shift+P) and type `Pr
 
 ```
 {
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
   "security.workspace.trust.enabled": true,
   "security.workspace.trust.startupPrompt": "never",
   "security.workspace.trust.emptyWindow": "never",
