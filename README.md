@@ -72,7 +72,7 @@ ___
 ### Start here
 
 | Guide | Description | Risk |
-|___|___|___|
+| --- | --- | --- |
 | [First Steps After Fresh OS Install](first-steps-after-fresh-os-install.md) | Initial setup checklist after installing Parrot OS. | Medium |
 | [Useful Software Not Included](useful-software-not-included.md) | Useful apps and tools to install after setup. | Low |
 | [Update Brave Browser](update-brave-browser.md) | Notes for keeping Brave Browser updated. | Low |
@@ -80,7 +80,7 @@ ___
 ### Hardware and peripherals
 
 | Guide | Description | Risk |
-|___|___|___|
+| --- | --- | --- |
 | [Blue Yeti Mic Support](blue-yeti-mic-support.md) | Notes for getting a Blue Yeti microphone working properly. | Low |
 | [Bluetooth Issues](fix-bluetooth-issues.md) | Troubleshooting Bluetooth services and audio stack issues. | Medium |
 | [Bluetooth Paired but No Audio](fix-bluetooth-paired-but-no-audio.md) | Fixes for paired Bluetooth devices with no sound output. | Medium |
@@ -91,7 +91,7 @@ ___
 ### Storage and boot media
 
 | Guide | Description | Risk |
-|___|___|___|
+| --- | --- | --- |
 | [Add exFAT to GParted](add-exfat-to-gparted.md) | Enable exFAT support for external drives and partition tools. | Medium |
 | [Make Bootable USB](make-bootable-usb.md) | Create bootable USB media from an ISO file. | High |
 
@@ -101,7 +101,7 @@ ___
 ### Development tools
 
 | Guide | Description | Risk |
-|___|___|___|
+| --- | --- | --- |
 | [Install GitHub CLI](install-github-cli.md) | Install and configure the GitHub command-line tool. | Low |
 | [VSCodium General Settings](vscodium-general-settings.md) | Recommended VSCodium settings. | Low |
 | [Stop VSCodium Trust Prompt on Folder Open](stop-vscodium-trust-prompt-on-folder-open.md) | Disable or reduce VSCodium workspace trust prompts. | Low |
@@ -110,7 +110,7 @@ ___
 ### Desktop experience
 
 | Guide | Description | Risk |
-|___|___|___|
+| --- | --- | --- |
 | [Emoji Support](emoji-support.md) | Improve emoji rendering and input support. | Low |
 | [Install Multiple Custom Fonts](install-multiple-custom-fonts.md) | Install custom fonts system-wide or per-user. | Low |
 | [Type Unicode Special Characters](type-unicode-special-characters.md) | Reference for typing Unicode characters on Linux. | Low |
@@ -118,7 +118,7 @@ ___
 ### Privacy and networking
 
 | Guide | Description | Risk |
-|___|___|___|
+| --- | --- | --- |
 | [Proton VPN Troubleshooting](proton-vpn-troubleshooting.md) | Fix common Proton VPN networking, DNS, and route issues. | Medium |
 
 ___
