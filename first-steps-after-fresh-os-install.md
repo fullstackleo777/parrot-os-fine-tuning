@@ -18,10 +18,10 @@ sudo apt update
 Now, to upgrade all installed packages to their latest versions, run the following command:
 
 ```bash
-sudo apt full-upgrade
+sudo apt parrot-upgrade
 ```
 
-- The `full-upgrade` command will upgrade the packages and handle any changes in dependencies.
+- The `parrot-upgrade` command will upgrade the packages and handle any changes in dependencies.
 
 ### Step 4: Confirm the Upgrade
 - If it asks for confirmation (like "Do you want to continue? [Y/n]"), just press `Y` and `Enter`.
