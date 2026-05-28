@@ -22,6 +22,9 @@ Validate the integrity of your ISO file by comparing the checksum with the offic
 
 ## Run the `dd` Command
 
+**WARNING!!!**
+
+The dd actions can destroy your drive so be careful!
 Make sure you have the correct input and output file paths!
 
 `sudo dd if=/path/to/your-file.iso of=/dev/sdX bs=4M status=progress oflag=sync`
