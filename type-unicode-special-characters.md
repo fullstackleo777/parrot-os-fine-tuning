@@ -33,6 +33,6 @@ Pres CTL + Shift + u, then type the character code point, and press space or ent
 | `¡`       | Inverted Exclamation Mark | U+00A1       | `00A1`       |
 | `¿`       | Inverted Question Mark    | U+00BF       | `00BF`       |
 | `¢`       | Cent Sign                 | U+00A2       | `00A2`       |
-| `₱`       | Mexican Peso Sign         | U+20B1       | `20B1`       |
+| `₱`       | Filipino Peso Sign         | U+20B1       | `20B1`       |
 
 ___
