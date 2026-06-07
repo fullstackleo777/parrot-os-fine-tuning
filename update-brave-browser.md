@@ -10,7 +10,7 @@ Sometimes you can't update Brave browser by pressing the "update" button in the 
 
 ### 2. Upgrade Installed Packages
 
-`sudo apt upgrade`
+`sudo apt parrot-upgrade`
 
 _Note: This will upgrade all your packages including Brave_
 
